@@ -13,12 +13,12 @@ import Nav from './components/Nav/Nav';
 import './App.css';
 
 
-// Card.defaultProps = {
-//   title: 'Titulo de la tarjeta',
-//   content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus natus necessitatibus dolorem at rerum soluta placeat nostrum!',
-//   link: 'Leer más',
-//   href: '#'
-// };
+Card.defaultProps = {
+  title: 'Titulo de la tarjeta',
+  content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusamus natus necessitatibus dolorem at rerum soluta placeat nostrum!',
+  link: 'Leer más',
+  href: '#'
+};
 ButtonYellow.defaultProps =  { 
   name: 'ButtonYellowM'
 };
@@ -63,6 +63,29 @@ class App extends Component {
           </div>
         </div>
         </Col>
+        <Col md={12}>
+        <BitterTitle type='bolder'>Tarjetas</BitterTitle>
+        <p>Para usar esta tarjeta debes importar el componente: <code>import Card from './components/Cards/Cards';</code> y llamarlo en tu codigo</p>
+        <Card />
+        </Col>
+        <Col md={12}>
+          <BitterTitle type='bolder'>Iconos</BitterTitle>
+          <OpenSans type='regular'>Para usar los iconos debes importar el componente <code>import Bracket from './components/Icons/Icons'</code> </OpenSans>
+          <Bracket type='b_yellow_one' />
+        <Bracket type='b_yellow_two' />
+        <Bracket type='b_yellow_two' />
+        <Bracket type='b_yellow_three' />
+        <Bracket type='b_pink_one' />
+        <Bracket type='b_pink_two' />
+        <Bracket type='b_pink_three' />
+        <Bracket type='b_green_one' />
+        <Bracket type='b_green_two' />
+        <Bracket type='b_green_three' />
+        <Bracket type='b_pink_one' />
+        <Bracket type='b_green_three' />
+          </Col>
+          <Loader />
+          <Isotype type='black' />
         </Row>
     );
   }
