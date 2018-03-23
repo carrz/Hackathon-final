@@ -5,10 +5,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 RETO: Crear un styleguide de Laboratoria con componentes en React.
 ------------------------------------------------------------------
 
-Paso 1 (Equipo Multidisciplinario):  
-Definir grupalmente el problema que implica el reto, identificar usuario, objetivos y producto.
+**Paso 1 (Equipo Multidisciplinario):  
+Definir grupalmente el problema que implica el reto, identificar usuario, objetivos y producto.**
 
 ![IMG](http://i68.tinypic.com/2qxnoyx.jpg)
+*Investigando sobre Guidelines*
+
+![IMG](http://i67.tinypic.com/15qw9s7.jpg)
+*Analizando guas de estilo ya existentes*
+
+![IMG](http://i67.tinypic.com/52gnyc.jpg)
+*Planificación de objetivos*
 
 TRABAJO EQUIPO UX
 -----
