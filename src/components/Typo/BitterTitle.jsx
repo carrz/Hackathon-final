@@ -2,7 +2,7 @@ import React,{Component}  from 'react';
 
 class BitterTitle extends Component {
 render() {
-  var styles = {};
+  let styles = {};
 
     if (this.props.type === 'bolder') {
       styles = {

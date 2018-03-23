@@ -2,7 +2,7 @@ import React,{Component}  from 'react';
 
 class OpenSans extends Component {
 render() {
-  var styles = {};
+  let styles = {};
 
     if (this.props.type === 'bold') {
       styles = {

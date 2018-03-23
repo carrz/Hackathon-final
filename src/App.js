@@ -7,8 +7,9 @@ import Isotype from './components/Isotypes/Isotypes';
 import Logo from './components/Logos/Logo';
 import Bracket from './components/Icons/Icons'
 import { ButtonYellow, ButtonGreen, ButtonRose, ButtonYellowM } from './components/Buttons/Buttons';
-import { Row, Col } from 'react-flexbox-grid';
+import { Row, Col, Grid } from 'react-flexbox-grid';
 import logo from './logo.svg';
+import Nav from './components/Nav/Nav';
 import './App.css';
 
 
@@ -35,42 +36,18 @@ class App extends Component {
   render() {
     return (
       <Row>
-        <Col md={3}>
-          <div className="logo"><Logo type="black" />
-          <div className="link">
-            <h3 hrf="#">Botones</h3>
-          </div >
-          <div className="link">
-            <h3 hrf="#">Tarjetas</h3>
-          </div>
-          <div className="link">
-            <h3 hrf="#">Iconos</h3>
-          </div>
-          <div className="link">
-            <h3 hrf="#">Tipografia</h3>
-          </div>
-          <div className="link">
-            <h3 hrf="#">Loader</h3>
-          </div>
-          <div className="link">
-            <h3 hrf="#">Logos</h3>
-          </div>
-          <div className="link">
-            <h3 hrf="#">Isotipos</h3>
-          </div>
-          </div>
-        </Col>
-        <Col className="center" md={9}>
-        <div className="header" >
-          <h1>Guía de estilos de Laboratoria</h1>
-        <Col md={8} mdOffset={2}> 
-          <h4 className="texto" >Laboratoria es más que un nombre. Es un Conjunto de valores, atributos y piezas visuales, que reflejan nuestro espíritu. Usarlo día a día, reforzará nuestra pasión y compromiso, donde mujeres talentosas tengan la oportunidad de desarrollar su carrera en tecnología.</h4>
+        <Nav/>
+        <Col md={12}>
+        <div className="center" >
+        <BitterTitle type='bolder'>Guía de estilos de Laboratoria</BitterTitle>
+        <Col md={8} mdOffset={2}>
+          <OpenSans type='regular'>Laboratoria es más que un nombre. Es un Conjunto de valores, atributos y piezas visuales, que reflejan nuestro espíritu. Usarlo día a día, reforzará nuestra pasión y compromiso, donde mujeres talentosas tengan la oportunidad de desarrollar su carrera en tecnología.</OpenSans>
         </Col>
         </div>
-        <h4 className="textH">Bienvenido a nuestra guía de estilos de Laboratoria, aquí encontrarás diversos estilos que podrás utilizar, para tu trabajo, adelante echa un vistazo y prueba,</h4>
+        <BitterTitle type='bold-magenta'>Bienvenido a nuestra guía de estilos de Laboratoria, aquí encontrarás diversos estilos que podrás utilizar, para tu trabajo, adelante echa un vistazo y prueba</BitterTitle>
         <div className="botones">
-         <h3 className="textH">Botones</h3>
-         <p className="textH">Para un usar estos botones solo tienes que importar el componente con el botán que desees usar</p>
+          <h3 className="textH">Botones</h3>
+          <p className="textH">Para un usar estos botones solo tienes que importar el componente con el botán que desees usar</p>
          <code>import ButtonYellow from './components/Buttons/Buttons';</code>
          <div className="text">
           <ButtonYellowM />
@@ -86,10 +63,7 @@ class App extends Component {
           </div>
         </div>
         </Col>
-        <Col>
-        
-        </Col>
-      </Row>
+        </Row>
     );
   }
 }

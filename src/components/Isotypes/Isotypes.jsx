@@ -5,7 +5,7 @@ class Isotype extends Component {
 render() {
 
     if (this.props.type === 'black') {
-      return <img src={window.location.origin + '/details/Iso-black.png'} />
+      return <img style={{width: 200}} src={window.location.origin + '/details/Iso-black.png'} />
     } else if (this.props.type === 'white') {
       return <img src={window.location.origin + '/details/Iso-white.png'} />
     } else if (this.props.type === 'black-yellow') {
